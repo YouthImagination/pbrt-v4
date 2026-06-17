@@ -33,7 +33,7 @@ foreach(obj ${OBJECTS})
   get_filename_component(obj_dir ${obj} DIRECTORY)
 
   if(obj_ext MATCHES ".ptx")
-    set(args --name ${VAR_NAME} ${obj})
+    set(args --name ${VAR_NAME} --padd 0 ${obj})
     execute_process(COMMAND "${BIN_TO_C_COMMAND}" ${args}
                     WORKING_DIRECTORY ${obj_dir}
                     RESULT_VARIABLE result
