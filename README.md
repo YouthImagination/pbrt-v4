@@ -128,6 +128,9 @@ C++17; we have verified that it builds on Ubuntu 20.04, MacOS 10.14, and
 Windows 10.  We welcome PRs that fix any issues that prevent it from
 building on other systems.
 
+edit `1.genVS.cmd` before running it, replace vcpkg and optix path to yours.
+run `2.build.cmd` after solution generated.
+
 Bug Reports and PRs
 -------------------
 
